@@ -1,0 +1,36 @@
+.reveal .roll
+  +perspective(400px)
+  +perspective-origin(50% 50%)
+  display: inline-block
+  line-height: 1.2
+  overflow: hidden
+  vertical-align: top
+
+.reveal .roll:hover
+  background: none
+  text-shadow: none
+
+.reveal .roll span
+  +transition(all 400ms ease)
+  +transform-origin(50% 0%)
+  +prefixer(transform-style, preserve-3d, webkit moz ms spec)
+  +prefixer(backface-visibility, hidden, webkit moz ms spec)
+  display: block
+  position: relative
+  padding: 0 2px
+  pointer-events: none
+
+.reveal .roll:hover span
+  +transform(translate3d(0px, 0px, -45px) rotateX(90deg))
+  background: rgba(black, 0.5)
+
+.reveal .roll span:after
+  +transform-origin(50% 0%)
+  +transform(translate3d(0px, 110%, 0px) rotateX(-90deg))
+  content: attr(data-title)
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  padding: 0 2px
+

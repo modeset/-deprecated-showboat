@@ -1,0 +1,47 @@
+.reveal .slides section .fragment
+  +transition(all 0.2s ease)
+  opacity: 0
+
+.reveal .slides section .fragment.visible
+  opacity: 1
+
+.reveal .slides section .fragment.grow
+  opacity: 1
+
+.reveal .slides section .fragment.grow.visible
+  +transform(scale(1.3))
+
+.reveal .slides section .fragment.shrink
+  opacity: 1
+
+.reveal .slides section .fragment.shrink.visible
+  +transform(scale(0.7))
+
+.reveal .slides section .fragment.roll-in
+  +transform(rotateX(90deg))
+  opacity: 0
+
+.reveal .slides section .fragment.roll-in.visible
+  +transform(rotateX(0))
+  opacity: 1
+
+.reveal .slides section .fragment.fade-out
+  opacity: 1
+
+.reveal .slides section .fragment.fade-out.visible
+  opacity: 0
+
+.reveal .slides section .fragment.highlight-red,
+.reveal .slides section .fragment.highlight-green,
+.reveal .slides section .fragment.highlight-blue
+  opacity: 1
+
+.reveal .slides section .fragment.highlight-red.visible
+  color: #ff2c2d
+
+.reveal .slides section .fragment.highlight-green.visible
+  color: #17ff2e
+
+.reveal .slides section .fragment.highlight-blue.visible
+  color: #1b91ff
+

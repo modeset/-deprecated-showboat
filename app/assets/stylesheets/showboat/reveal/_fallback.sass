@@ -1,0 +1,26 @@
+.no-transforms
+  overflow-y: auto
+
+.no-transforms .slides
+  text-align: center
+  margin: 0
+  top: 0
+  left: 50%
+
+.no-transforms .slides section
+  +transform(none)
+  opacity: 1 !important
+  display: block !important
+  position: relative !important
+  top: 0
+  left: -50%
+  margin: 70px 0
+  height: auto
+  min-height: auto
+
+.no-transforms .slides section section
+  left: 0
+
+.no-transition
+  +transition(none)
+

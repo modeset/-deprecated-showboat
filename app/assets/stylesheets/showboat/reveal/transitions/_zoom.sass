@@ -1,0 +1,16 @@
+.reveal.zoom .slides > section.past
+  +transform(scale(16))
+  opacity: 0
+  visibility: hidden
+
+.reveal.zoom .slides > section.future
+  +transform(scale(0.2))
+  opacity: 0
+  visibility: hidden
+
+.reveal.zoom .slides > section > section.past
+  +transform(translate(0, -150%))
+
+.reveal.zoom .slides > section > section.future
+  +transform(translate(0, 150%))
+

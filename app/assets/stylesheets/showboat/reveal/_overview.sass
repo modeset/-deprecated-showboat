@@ -1,0 +1,34 @@
+.reveal.overview .slides
+  +perspective-origin(0% 0%)
+  +perspective(700px)
+
+.reveal.overview .slides section
+  background: rgba(black, 0.1)
+  opacity: 1 !important
+  height: 600px
+  overflow: hidden
+  visibility: visible !important
+  cursor: pointer
+
+.reveal.overview .slides section .fragment
+  opacity: 1
+
+.reveal.overview .slides section:after,
+.reveal.overview .slides section:before
+  display: none !important
+
+.reveal.overview .slides section > section
+  opacity: 1
+  cursor: pointer
+
+.reveal.overview .slides section:hover
+  background: rgba(black, 0.3)
+
+.reveal.overview .slides section.present
+  background: rgba(black, 0.3)
+
+.reveal.overview .slides > section.stack
+  background: none
+  overflow: visible
+  padding: 0
+

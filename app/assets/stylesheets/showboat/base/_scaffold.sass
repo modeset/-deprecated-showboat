@@ -1,0 +1,62 @@
+$body-family: $sans-family !default
+$body-background: $base-bgc !default
+$body-color: $base-color !default
+$select-color: white !default
+$select-bgc: $primary !default
+$tap-highlight: $link-color !default
+
+
+// Top level elements
+html
+  font-size: 100%
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+
+html, body
+  overflow: hidden
+  width: 100%
+  height: 100%
+
+html, button, input, select, textarea
+  color: $body-color
+  font-family: $body-family
+
+body
+  +font-size($base-font-size)
+  background: $body-background
+  line-height: $base-line-height
+  position: relative
+  margin: 0
+
+\::selection
+  background: $select-bgc
+  color: $select-color
+  text-shadow: none
+
+
+// Links
+a
+  +transition(color, $speed)
+
+a, a:visited
+  color: $link-color
+  text-decoration: none
+
+a:focus
+  outline: thin dotted
+  outline: 5px auto -webkit-focus-ring-color
+  outline-offset: -2px
+
+a:hover, a:active
+  outline: 0
+  text-decoration: none
+
+a:hover
+  color: $link-hover
+
+a:active, a.active, .active > a
+  color: $link-active
+
+a:link
+  -webkit-tap-highlight-color: $tap-highlight
+

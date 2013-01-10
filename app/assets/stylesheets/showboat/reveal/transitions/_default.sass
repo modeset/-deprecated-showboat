@@ -1,0 +1,20 @@
+.reveal .slides > section.past
+  +transform(translate3d(-100%, 0, 0) rotateY(-90deg) translate3d(-100%, 0, 0))
+  display: block
+  opacity: 0
+
+.reveal .slides > section.future
+  +transform(translate3d(100%, 0, 0) rotateY(90deg) translate3d(100%, 0, 0))
+  display: block
+  opacity: 0
+
+.reveal .slides > section > section.past
+  +transform(translate3d(0, -300px, 0) rotateX(70deg) translate3d(0, -300px, 0))
+  display: block
+  opacity: 0
+
+.reveal .slides > section > section.future
+  +transform(translate3d(0, 300px, 0) rotateX(-70deg) translate3d(0, 300px, 0))
+  display: block
+  opacity: 0
+

@@ -1,0 +1,180 @@
+%section.cover-template(data-state="no-background")
+  %h1 This is slide 1
+  %p not much to see here
+
+%section.title-template(data-state="no-background")
+  %h1 Mode Set
+  %h2 Presentation Name
+  %h2 Continued or presenter
+  %date 01.29.2013
+  = image_tag "showboat/title-smoke.png", alt: "mode set", class: "smoke"
+  = image_tag "showboat/slant.png", alt: "/", class: "slant"
+  = image_tag "showboat/modeset-logo.png", alt: "mode set", class: "logo"
+
+-# Copy Template
+%section.copy-template(data-heading="Copy Template <span>Sub Heading</span>")
+  :markdown
+    # Start with an h1 heading
+    Yeah, well, listen. You ought to ditch the two geeks you're in the car with
+    now and get in with us. But that's alright, we'll worry about that later.
+    I will see you there. All right?  Man, I love those redheads.
+
+
+%section.copy-template(data-heading="Copy Template <span>code example</span>")
+  :markdown
+    # A basic code example
+    ```
+    class Foo
+      constructor: -> @foo = 'foo'
+      bar: -> baz() # public method
+      baz = -> 'baz' # private method
+
+    f = new Foo()
+    f.bar() # -> 'baz'
+    f.baz # -> undefined
+    ```
+
+%section.copy-template(data-heading="Copy Template <span>list example</span>")
+  :markdown
+    # A list in the copy template
+    Yeah, well, _listen_. You <kbd>ought</kbd> to **ditch** the <strong><em>two</em></strong>
+    <a href="http://modeset.com/">geeks</a> you're in the <dfn title="motorized vehicle">car</dfn> with now and get
+    <sub>in with</sub> us. But <samp>that's</samp> <code>alright</code>, <mark>we'll worry about</mark> that <time>later</time>.
+    I will <small>see you</small> there. All right<sup>&trade;</sup>? <del>Man</del>, <ins>I love</ins> those
+    <abbr title="Hotties">redheads</abbr>.
+
+    - Miller High Life
+    - Genesee
+      - Genny Light
+      - Cream Ale
+    - Molsen Canadian
+    - Pabst
+
+%section.copy-template(data-heading="Copy Template <span>split for your pleasure</span>")
+  %h1 Got a lot to say? Use 2 panels
+  .panel-pull
+    :markdown
+      Yeah, well, listen. You ought to ditch the two geeks you're in the car with
+      now and get in with us. But that's alright, we'll worry about that later.
+      I will see you there. All right?  Man, I love those redheads.
+  .panel-push
+    :markdown
+      Yeah, well, listen. You ought to ditch the two geeks you're in the car with
+      now and get in with us. But that's alright, we'll worry about that later.
+      I will see you there. All right?  Man, I love those redheads.
+
+%section.copy-template(data-heading="Copy Template <span>Like split windows!</span>")
+  %h1 Works just as well with code snippets
+  .panel-pull
+    :markdown
+      ```
+      describe 'Foo', ->
+        describe '#constructor', ->
+            f = new Foo()
+          it 'sets up a foo thingy', ->
+            expect(@foo.bar).toBeDefined()
+
+          it 'does not have direct access to baz', ->
+            expect(@foo.baz).not.toBeDefined()
+      ```
+  .panel-push
+    :markdown
+      ```
+      class Foo
+        constructor: -> @foo = 'foo'
+        bar: -> baz() # public method
+        baz = -> 'baz' # private method
+
+      f = new Foo()
+      f.bar() # -> 'baz'
+      f.baz # -> undefined
+      ```
+
+-# List Template
+%section.list-template(data-heading="List Template <span>This is purely a list</span>")
+  :markdown
+    - this is a list on it's own
+    - lives under the list-template class
+    - If you have some sub points
+      - Use nested lists
+      - and like this
+    - ordered lists look exactly like unordered lists
+
+%section.list-template(data-heading="List Template <span>Split that list</span>")
+  .panel-pull
+    :markdown
+      - lots of lists?
+      - split lists using
+        - panel-pull
+        - panel push
+      - keep it short
+      - short is good
+      - unless it's beer
+  .panel-push
+    :markdown
+      - Miller High Life
+      - Genesee
+        - Genny Light
+        - Cream Ale
+      - Molsen Canadian
+      - Pabst
+
+%section.list-template(data-heading="List Template <span>It's got a heading</span>")
+  :markdown
+    # Headings are typically not needed in a list
+    - but there here if you need it
+    - hows it going?
+    - does this make sense?
+      - Better README?
+      - Did you read the tests?
+    - is this easier than keynote?
+
+%section
+  %section.list-template(data-heading="List Template <span>This is purely a list</span>")
+    %h1 Fragments
+    %ul
+      %li.fragment.fade-in You can utilize fragments for building lists
+      %li.fragment.fade-in actually you can use fragments anywhere
+      %li.fragment.fade-in attach the class to an element and away you go
+      %li.fragment.fade-in arrow down for various fragment styles
+
+  %section.copy-template(data-heading="Copy Template <span>Fragments</span>")
+    %p.fragment.grow grow
+    %p.fragment.shrink shrink
+    %p.fragment.roll-in roll-in
+    %p.fragment.fade-out fade-out
+    %p.fragment.fade-in fade-in
+    %p<
+      %a(href="https://github.com/hakimel/reveal.js/#fragments") see reveal.js docs
+
+
+-# Media Template
+%section.media-template(data-heading="Media Template <span>Project Name</span>")
+  = image_tag "showboat/fpo/qdoba-client.png", alt: "qdoba", class: "reflect"
+  %p
+    %a(href="http://www.qdoba.com") Visit Qdoba.com
+
+-# nested baby!
+%section
+  %section.media-template(data-heading="Media Template <span>Project Name</span>")
+    = image_tag "showboat/fpo/paranorman.png", alt: "paranorman", class: "reflect"
+    %p
+      %a(href="http://www.paranorman.com/") Visit Paranorman.com
+    %p Arrow down for more!
+
+  %section.media-template(data-heading="Media Template <span>Project Name</span>")
+    %iframe.reflect(src="http://player.vimeo.com/video/52507615" width="1024" height="575" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+
+%section.media-template(data-heading="Media Template <span>Project Name</span>")
+  = image_tag "showboat/fpo/top-fan.png", alt: "top fan", class: "reflect"
+
+%section.media-template(data-heading="Media Template <span>Project Name</span>")
+  = image_tag "showboat/fpo/kacheout.png", alt: "kacheout", class: "reflect"
+
+
+-# So long, thanks much
+%section.end-template
+  %h1 thank you
+  = image_tag "showboat/slant.png", alt: "/", class: "slant"
+  = image_tag "showboat/modeset-logo.png", alt: "mode set", class: "logo"
+
