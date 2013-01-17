@@ -2,6 +2,7 @@
 #= require head.min
 #= require reveal
 #= require ./slide_heading
+#= require ./page_title
 
 Reveal.initialize
   controls: true
@@ -33,4 +34,5 @@ Reveal.initialize
 
 Reveal.addEventListener 'ready', (e) ->
   slide_heading = new SlideHeading Reveal
+  page_title = new PageTitle Reveal
 

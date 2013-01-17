@@ -1,14 +1,15 @@
 # Showboat
 
 ## WIP
-- cover template
-- add indicators along side progress
-- figure out the vertical centering thing
 - test all typographical values
+  - move all font size declarations to the mixin
+- cover template
+- figure out the vertical centering thing
 - add some fluff classes (around fragments too)
 - code highlighting
-- tables
+- test notes
 - add info window for media slides
+- style paddles
 - controls shortcut
 - charts?
 
