@@ -1,0 +1,35 @@
+$table-bgc: $base-bgc !default
+$table-border: $base-border !default
+$table-hover-bgc: darken($table-bgc, 10%) !default
+$table-padding-lr: 0.5em !default
+$table-padding-tb: 0.8em !default
+
+table
+  background-color: $table-bgc
+  margin: 0.5em 0
+  width: 100%
+
+  th, td
+    border-top: 1px solid $table-border
+    border-left: 1px solid $table-border
+    border-right: 1px solid $table-border
+    line-height: 1
+    text-align: left
+    padding: $table-padding-tb $table-padding-lr
+
+  tr
+    border: 1px solid $table-border
+
+  th
+    font-family: $sans-bold-family
+    font-weight: normal
+    vertical-align: bottom
+
+  tbody tr:hover td
+    background-color: $table-hover-bgc
+
+// Half the height of a normal table
+.table-condensed
+  th, td
+    padding: ($table-padding-tb * 0.5) $table-padding-lr
+
