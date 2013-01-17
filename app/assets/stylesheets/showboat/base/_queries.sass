@@ -1,0 +1,47 @@
+@mixin query-font-sizing($size:32)
+  body,
+  blockquote p
+    +font-size($size)
+
+  h1,
+  .list-template > ul,
+  .list-template > ol,
+  .panel-pull > ul,
+  .panel-pull > ol,
+  .panel-push > ul,
+  .panel-push > ol
+    +font-size($size + 40)
+
+  h2
+    +font-size($size + 32)
+
+  h3
+    +font-size($size + 24)
+
+  h4
+    +font-size($size + 18)
+
+  h5
+    +font-size($size + 14)
+
+  h6
+    +font-size($size + 10)
+
+  .slide-heading, date
+    +font-size($size - 4)
+
+  .slide-heading span
+    +font-size($size - 10)
+
+  ul, ol
+    +font-size($size + 2)
+
+  .title-template h1
+    +font-size($size - 8)
+
+  .media-template a
+    +font-size($size - 14)
+
+@media (max-width: 1440px)
+  +query-font-sizing(24)
+
