@@ -2,7 +2,6 @@
 #= require head.min
 #= require reveal
 #= require ./slide_heading
-#= require ./indicators
 
 Reveal.initialize
   controls: true
@@ -34,5 +33,4 @@ Reveal.initialize
 
 Reveal.addEventListener 'ready', (e) ->
   slide_heading = new SlideHeading Reveal
-  indication = new Indication Reveal
 
