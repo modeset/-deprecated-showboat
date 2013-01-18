@@ -1,0 +1,16 @@
+%mtn-header
+  color: $primary
+  &:before
+    background: transparent image-url('showboat/mountains.png') no-repeat 0 0
+    content: ""
+    display: block
+    margin-bottom: 0.25em
+    width: 20px
+    height: 5px
+
+.reflect
+  -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.75, transparent), to(rgba(0,0,0,0.2)))
+
+.slide-header
+  position: relative
+

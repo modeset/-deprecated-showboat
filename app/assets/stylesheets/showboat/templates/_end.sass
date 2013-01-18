@@ -1,0 +1,31 @@
+// For the media queries
+.reveal .slides > .end-template
+  top: -6%
+
+.end-template h1
+  text-transform: lowercase
+  text-align: right
+  color: #7d7e7c
+  width: 60%
+  &:after
+    content: "."
+    color: $primary
+
+.end-template .slant
+  position: absolute
+  top: -150px
+  left: 52%
+  z-index: -1
+
+.end-template .logo
+  position: absolute
+  width: 130px
+  height: 95px
+  top: -15px
+  right: 10%
+  z-index: -1
+
+@media (max-width: 1024px)
+  .end-template .slant
+    display: none
+

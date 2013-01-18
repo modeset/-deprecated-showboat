@@ -109,7 +109,7 @@
     - If you have some sub points
       - Use nested lists
       - and like this
-    - ordered lists look exactly like unordered lists
+    - ordered lists look like unordered lists
 
 %section.list-template(data-heading="List Template <span>Split that list</span>")
   .panel-pull
@@ -120,7 +120,6 @@
         - panel push
       - keep it short
       - short is good
-      - unless it's beer
   .panel-push
     :markdown
       - Miller High Life
@@ -140,16 +139,17 @@
       - Did you read the tests?
     - is this easier than keynote?
 
-%section
+%section.copy-template
   %section.list-template(data-heading="List Template <span>This is purely a list</span>")
     %h1 Fragments
     %ul
-      %li.fragment.fade-in You can utilize fragments for building lists
-      %li.fragment.fade-in actually you can use fragments anywhere
-      %li.fragment.fade-in attach the class to an element and away you go
-      %li.fragment.fade-in arrow down for various fragment styles
+      %li.fragment.fade-in Utilize fragments for building lists
+      %li.fragment.fade-in You can use fragments anywhere
+      %li.fragment.fade-in Attach the class to an element
+      %li.fragment.fade-in Arrow down for various fragment styles
 
   %section.copy-template(data-heading="Copy Template <span>Fragments</span>")
+    %h1 Fragment Examples
     %p.fragment.grow grow
     %p.fragment.shrink shrink
     %p.fragment.roll-in roll-in
@@ -162,19 +162,14 @@
 -# Media Template
 %section.media-template(data-heading="Media Template <span>Project Name</span>")
   = image_tag "showboat/fpo/qdoba-client.png", alt: "qdoba", class: "reflect"
-  %p
-    %a(href="http://www.qdoba.com") Visit Qdoba.com
+  %a(href="http://www.qdoba.com") Visit Qdoba.com
 
--# nested baby!
-%section
-  %section.media-template(data-heading="Media Template <span>Project Name</span>")
-    = image_tag "showboat/fpo/paranorman.png", alt: "paranorman", class: "reflect"
-    %p
-      %a(href="http://www.paranorman.com/") Visit Paranorman.com
-    %p Arrow down for more!
+%section.media-template(data-heading="Media Template <span>Project Name</span>")
+  = image_tag "showboat/fpo/paranorman.png", alt: "paranorman", class: "reflect"
+  %a(href="http://www.paranorman.com/") Visit Paranorman.com
 
-  %section.media-template(data-heading="Media Template <span>Project Name</span>")
-    %iframe.reflect(src="http://player.vimeo.com/video/52507615" width="1024" height="575" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+%section.media-template(data-heading="Media Template <span>Project Name</span>")
+  %iframe.reflect(src="http://player.vimeo.com/video/52507615" width="1024" height="575" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
 
 %section.media-template(data-heading="Media Template <span>Project Name</span>")
   = image_tag "showboat/fpo/top-fan.png", alt: "top fan", class: "reflect"

@@ -1,13 +1,15 @@
 # Showboat
 
 ## WIP
-- figure out the vertical centering thing
-- fine tune the type sizing for the various settings
-- come up with a plan for mobile
+- move links to the header
+- scale videos
 - cover template
-- add some fluff classes (around fragments too)
+- fine tune around all media queries
+- come up with a plan for mobile
+- style paddles and overview
 - code highlighting
-- style paddles
+- add some fluff classes (around fragments too)
+- blockquotes
 - test notes
 - add info window for media slides
 - controls shortcut

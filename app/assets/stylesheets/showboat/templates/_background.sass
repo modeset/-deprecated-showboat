@@ -1,0 +1,9 @@
+.reveal .state-background
+  +linear-gradient(#b0b0b0, rgba(#b0b0b0, 0.1), #b0b0b0, $fallback: white)
+  +transition(opacity 800ms ease)
+  opacity: 1
+
+.no-background .reveal .state-background
+  background: white
+  opacity: 0
+

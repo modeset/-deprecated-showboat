@@ -28,6 +28,18 @@ body
   position: relative
   margin: 0
 
+@media (max-width: 1440px)
+  body
+    +font-size(30)
+
+@media (max-width: 1024px)
+  body
+    +font-size(24)
+
+@media (max-width: 768px)
+  body
+    +font-size(20)
+
 \::selection
   background: $select-bgc
   color: $select-color

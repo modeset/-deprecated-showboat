@@ -1,0 +1,40 @@
+.list-template h1
+  @extend %mtn-header
+
+
+.list-template > ul,
+.list-template > ol,
+.list-template .panel-pull > ul,
+.list-template .panel-pull > ol,
+.list-template .panel-push > ul,
+.list-template .panel-push > ol
+  +font-percent($h1-size)
+  font-family: $sans-lite-family
+  text-transform: lowercase
+  list-style-image: image-url('showboat/mountains.png')
+  margin-top: 0.32em
+
+.list-template ul ul,
+.list-template ul ol,
+.list-template ol ul,
+.list-template ol ol
+  font-size: 50%
+
+.list-template h1 + ul,
+.list-template h1 + ol
+  margin-top: 0
+
+
+@media (max-width: 1440px)
+  .reveal .slides > .list-template
+    top: -40%
+
+@media (max-width: 1024px)
+  .reveal .slides > .list-template
+    top: -30%
+
+
+@media (max-width: 768px)
+  .reveal .slides > .list-template
+    top: -50%
+

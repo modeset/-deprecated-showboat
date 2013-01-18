@@ -31,26 +31,26 @@ h1, h2, h3, h4, h5, h6
   margin: 0
 
 h1
-  +font-size($h1-size)
+  +font-percent($h1-size)
 
 h2
-  +font-size($h2-size)
+  +font-percent($h2-size)
 
 h3
-  +font-size($h3-size)
+  +font-percent($h3-size)
 
 h4
-  +font-size($h4-size)
+  +font-percent($h4-size)
 
 h5
-  +font-size($h5-size)
+  +font-percent($h5-size)
 
 h6
-  +font-size($h6-size)
+  +font-percent($h6-size)
 
 .slide-heading
   +transition(opacity $speed ease)
-  +font-size(26)
+  +font-percent(26)
   background: transparent image-url('showboat/modeset-crest-white.png') no-repeat 0 0
   font-family: $serif-family
   text-transform: uppercase
@@ -67,7 +67,7 @@ h6
     opacity: 1
 
 .slide-heading span
-  +font-size(16)
+  +font-percent(16)
   font-family: $sans-bold-family
   &:before
     content: "_"
@@ -147,7 +147,7 @@ code
 
 pre
   border-radius: $pre-radii
-  margin: 1em 0
+  margin: 0.5em 0
   padding: 0.8em
   white-space: pre
   white-space: pre-wrap
@@ -170,7 +170,7 @@ blockquote
   padding-right: 10%
 
 blockquote p
-  +font-size($base-font-size)
+  +font-percent($base-font-size)
   font-style: italic
 
 blockquote small
@@ -190,7 +190,7 @@ blockquote:after
   content: ""
 
 date
-  +font-size(26)
+  +font-percent(26)
   color: $primary
   font-family: $serif-family
   display: block
@@ -203,7 +203,6 @@ ol, ul, dl, menu, dd
   padding: 0
 
 ul, ol
-  +font-size($base-font-size + 2)
   font-family: $sans-bold-family
   list-style-image: image-url('showboat/list.png')
   text-transform: uppercase
@@ -211,10 +210,10 @@ ul, ol
 
 ul ul, ul ol,
 ol ul, ol ol
+  color: lighten($body-color, 5%)
   margin-top: 0
   margin-bottom: 0.5em
   text-transform: none
-  color: lighten($body-color, 5%)
 
 nav ul,
 nav ol,

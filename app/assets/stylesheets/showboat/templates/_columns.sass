@@ -1,0 +1,26 @@
+.panel-pull,
+.panel-push
+  +box-sizing(border-box)
+  display: block
+  float: left
+  width: 48%
+
+.panel-pull
+  margin-right: 1%
+.panel-push
+  margin-left: 1%
+
+.panel-pull p,
+.panel-push p,
+.panel-pull pre,
+.panel-push pre,
+.panel-pull table,
+.panel-push table
+  width: auto
+
+
+@media (max-width: 1440px)
+  .panel-pull,
+  .panel-push
+    width: 46%
+

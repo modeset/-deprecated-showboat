@@ -20,6 +20,9 @@
   font-size: $target-px * 1px
   font-size: to_rem($target-px, $context)
 
+@mixin font-percent($target-px, $context:$context-px)
+  font-size: percentage($target-px / $base-font-size)
+
 @mixin clearfix
   content: ""
   display: table

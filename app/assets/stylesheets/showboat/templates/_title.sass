@@ -1,0 +1,67 @@
+.reveal .slides > .title-template
+  top: -25%
+
+.title-template h1
+  +font-percent(24)
+  font-family: $sans-bold-family
+  text-transform: uppercase
+  margin-left: 0.5em
+
+.title-template h2
+  +box-sizing(border-box)
+  background-color: #f0eff0
+  text-transform: uppercase
+  padding: 0.25em 0.25em 0
+  width: 60%
+
+.title-template h2 + h2
+  margin-top: 2px
+
+.title-template date
+  margin-left: 0.5em
+
+.title-template .smoke
+  position: absolute
+  top: -230px
+  left: 210px
+  z-index: -1
+
+.title-template .slant
+  position: absolute
+  top: 0
+  right: 15%
+  z-index: -1
+
+.title-template .logo
+  position: absolute
+  width: 130px
+  height: 95px
+  top: 130px
+  right: 10%
+  z-index: -1
+
+
+@media (max-width: 1440px)
+  .reveal .slides > .title-template
+    top: -15%
+  .title-template h2
+    width: 70%
+  .title-template .logo
+    right: 3%
+  .title-template .slant
+    right: 8%
+
+
+@media (max-width: 1024px)
+  .reveal .slides > .title-template
+    top: -20%
+  .title-template h2
+    width: 100%
+  .title-template .logo
+    position: static
+    float: right
+    margin-top: 1em
+  .title-template .slant
+    display: none
+
+
