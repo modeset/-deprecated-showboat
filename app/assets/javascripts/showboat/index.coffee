@@ -8,7 +8,7 @@ Reveal.initialize
   controls: true
   progress: true
   history: true
-  center: true
+  center: false
   rollingLinks: false
   loop: true
   theme: Reveal.getQueryHash().theme

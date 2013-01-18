@@ -1,15 +1,17 @@
 # Showboat
 
 ## WIP
-- test all typographical values
-  - move all font size declarations to the mixin
-- cover template
 - figure out the vertical centering thing
+- fine tune the type sizing for the various settings
+- come up with a plan for mobile
+- cover template
 - add some fluff classes (around fragments too)
 - code highlighting
+- style paddles
 - test notes
 - add info window for media slides
-- style paddles
 - controls shortcut
+- update reveal
+- document
 - charts?
 

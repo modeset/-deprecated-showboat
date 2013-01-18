@@ -1,5 +1,4 @@
 .reveal .state-background
-  // +linear-gradient(#b0b0b0, rgba(#b0b0b0, 0.1) 10%, $fallback: white)
   +linear-gradient(#b0b0b0, rgba(#b0b0b0, 0.1), #b0b0b0, $fallback: white)
   +transition(opacity 800ms ease)
   opacity: 1
@@ -25,6 +24,12 @@
   margin-right: 1%
 .panel-push
   margin-left: 1%
+
+// For the media queries
+.reveal .slides > .title-template
+  top: -25%
+.reveal .slides > .end-template
+  top: -6%
 
 .title-template h1
   +font-size(24)
@@ -97,7 +102,7 @@
   font-family: $sans-lite-family
   text-transform: lowercase
   list-style-image: image-url('showboat/mountains.png')
-
+  margin-top: 0.3em
 
 .media-template
   text-align: center

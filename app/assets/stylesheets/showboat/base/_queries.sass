@@ -1,4 +1,6 @@
 @mixin query-font-sizing($size:32)
+  $base-font-size: $size
+
   body,
   blockquote p
     +font-size($size)
@@ -44,4 +46,38 @@
 
 @media (max-width: 1440px)
   +query-font-sizing(24)
+
+@media (max-width: 1024px)
+  +query-font-sizing(18)
+  .reveal .slides > .title-template,
+    top: -20%
+  .reveal .slides > .copy-template,
+  .reveal .slides > .list-template
+    top: -30%
+
+  .title-template .logo
+    position: static
+    float: right
+    margin-top: 1em
+
+  .title-template h2
+    width: 100%
+
+  .title-template .slant,
+  .end-template .slant
+    display: none
+
+@media (max-width: 768px)
+  +query-font-sizing(18)
+  .reveal .slides > .copy-template,
+  .reveal .slides > .list-template
+    top: -50%
+
+// Template types
+  - cover-template
+  - title-template
+  - copy-template
+  - list-template
+  - media-template
+  - end-template
 
