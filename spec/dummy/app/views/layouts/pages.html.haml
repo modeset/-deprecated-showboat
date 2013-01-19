@@ -22,8 +22,8 @@
 
   %body(role="document")
     = content_for :pre_body
-    %header.slide-header
-      %h1#main_heading.slide-heading
+    %header.slide-header#main_heading
+      %h1.slide-heading
     %div.reveal(role="main")
       %article.slides
         = yield

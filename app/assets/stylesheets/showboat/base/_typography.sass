@@ -49,22 +49,14 @@ h6
   +font-percent($h6-size)
 
 .slide-heading
-  +transition(opacity $speed ease)
   +font-percent(26)
   background: transparent image-url('showboat/modeset-crest-white.png') no-repeat 0 0
   font-family: $serif-family
   text-transform: uppercase
-  position: absolute
-  top: 1em
-  left: 5%
   padding-top: 0.4em
   padding-left: 65px
   min-width: 50px
   min-height: 50px
-  z-index: 100
-  opacity: 0
-  &.in
-    opacity: 1
 
 .slide-heading span
   +font-percent(16)
@@ -72,6 +64,18 @@ h6
   &:before
     content: "_"
 
+.slide-heading a
+  +font-percent(18)
+  margin-top: 0.7em
+  float: right
+
+.slide-heading a,
+.slide-heading a:visited
+  color: $heading-color
+
+.slide-heading a:hover,
+.slide-heading a:active
+  color: $blue
 
 // Inline paragraph elements
 // -----------------------------------------------------------------------------

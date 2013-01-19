@@ -15,8 +15,6 @@
   +perspective(600px)
   overflow: visible
   position: absolute
-  // top: 0
-  // left: 0
   top: 50%
   left: 50%
   min-height: 600px
@@ -31,7 +29,6 @@
   display: none
   position: absolute
   width: 100%
-  padding: 0 5%
   z-index: 10
 
   -webkit-transition: -webkit-transform-origin 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985), -webkit-transform 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985), visibility 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985), opacity 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985)
@@ -41,10 +38,9 @@
   transition: transform-origin 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985), transform 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985), visibility 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985), opacity 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985)
 
 .reveal .slides > section
-  // top: 0
-  // left: 0
   top: -50%
   left: -50%
+  padding: 0 5%
 
 .reveal .slides > section.present,
 .reveal .slides > section > section.present

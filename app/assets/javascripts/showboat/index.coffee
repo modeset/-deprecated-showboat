@@ -1,8 +1,7 @@
 #= require underscore
 #= require head.min
 #= require reveal
-#= require ./slide_heading
-#= require ./page_title
+#= require_tree ./plugins
 
 Reveal.initialize
   controls: true
