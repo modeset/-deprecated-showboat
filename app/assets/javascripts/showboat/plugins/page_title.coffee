@@ -3,7 +3,7 @@ class window.PageTitle
   constructor: (@reveal, @prefix) ->
     @title = document.querySelector 'title'
     @prefix ?= @title.innerHTML
-    @total = document.querySelectorAll(".reveal .slides > section:not(.stack)").length + 1
+    @total = document.querySelectorAll(".reveal .slides > section:not(.stack)").length
     @reveal.addEventListener 'slidechanged', => @render arguments...
     @render(indexh: @reveal.getIndices().h)
 
