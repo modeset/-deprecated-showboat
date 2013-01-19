@@ -1,7 +1,6 @@
 # Showboat
 
 ## WIP
-- scale videos
 - cover template
 - style paddles and overview
 - code highlighting
@@ -14,12 +13,12 @@
 - document
 - charts?
 
-- fine tune around all media queries
-  - 2560
-  x 1920
-  x 1440
-  - 1024
-  - 768
-  - 480
-  - 320
+fine tune around all media queries
+- 2560
+x 1920
+x 1440
+- 1024
+- 768
+- 480
+- 320
 
