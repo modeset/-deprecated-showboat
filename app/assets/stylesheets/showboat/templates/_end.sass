@@ -1,11 +1,12 @@
-// For the media queries
 .reveal .slides > .end-template
-  top: -6%
+  padding-top: 18%
 
 .end-template h1
-  text-transform: lowercase
-  text-align: right
+  +box-sizing(border-box)
   color: #7d7e7c
+  text-align: right
+  text-transform: lowercase
+  float: left
   width: 60%
   &:after
     content: "."
@@ -13,17 +14,21 @@
 
 .end-template .slant
   position: absolute
-  top: -150px
+  padding-top: 10%
+  top: 0
   left: 52%
   z-index: -1
 
 .end-template .logo
-  position: absolute
+  +box-sizing(border-box)
+  float: right
   width: 130px
   height: 95px
-  top: -15px
-  right: 10%
-  z-index: -1
+
+
+@media (max-width: 1440px)
+  .reveal .slides > .end-template
+    padding-top: 18%
 
 @media (max-width: 1024px)
   .end-template .slant
