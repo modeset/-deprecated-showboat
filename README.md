@@ -1,15 +1,14 @@
 # Showboat
 
 ## WIP
-- cover template
-- style paddles and overview
-- code highlighting
-- block quotes
-- add some fluff classes (around fragments too)
-- add info window for media slides
-- test notes
 - controls shortcut
+- code highlighting
+- add some fluff classes (around fragments too)
+- normalize styles and configuration
+- test notes
 - update reveal
+- print styles
+- generators
 - document
 - charts?
 
