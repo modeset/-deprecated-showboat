@@ -28,12 +28,15 @@ Reveal.initialize
     async: true
     condition: ->
       !!document.body.classList
+  ,
+    src: 'assets/highlight.js'
+    async: true
+    callback: ->
+      hljs.initHighlightingOnLoad()
   ]
 
 
 Reveal.addEventListener 'ready', (e) ->
-  slide_heading = new SlideHeading Reveal
-  page_title = new PageTitle Reveal
-  frames = new ResponsiveFrame Reveal
-  help = new HelpModal Reveal
+  plugins = [SlideHeading, PageTitle, ResponsiveFrame, HelpModal]
+  new plugin Reveal for plugin in plugins
 

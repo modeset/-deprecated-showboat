@@ -1,7 +1,6 @@
 # Showboat
 
 ## WIP
-- code highlighting
 - add some fluff classes (around fragments too)
 - normalize styles and configuration
 - test notes
