@@ -35,4 +35,5 @@ Reveal.addEventListener 'ready', (e) ->
   slide_heading = new SlideHeading Reveal
   page_title = new PageTitle Reveal
   frames = new ResponsiveFrame Reveal
+  help = new HelpModal Reveal
 
