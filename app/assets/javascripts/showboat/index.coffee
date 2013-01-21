@@ -4,14 +4,11 @@
 #= require_tree ./plugins
 
 Reveal.initialize
-  controls: true
-  progress: true
   history: true
   center: false
   rollingLinks: false
   loop: true
-  theme: Reveal.getQueryHash().theme
-  transition: Reveal.getQueryHash().transition or "default" # default/cube/page/concave/zoom/linear/none
+  transition: "default" # default/cube/page/concave/zoom/linear/none
 
   # Optional libraries used to extend on reveal.js
   dependencies: [

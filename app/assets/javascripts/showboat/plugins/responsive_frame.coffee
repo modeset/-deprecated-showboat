@@ -1,4 +1,5 @@
 class window.ResponsiveFrame
+
   constructor: (@reveal) ->
     @frames = document.querySelectorAll '.media-template > iframe'
     return unless @frames.length

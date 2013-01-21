@@ -1,7 +1,7 @@
 class window.HelpModal
 
   shortcuts: [
-    {key: 'F'      , desc: 'Enters full screen mode'}
+    {key: 'F'      , desc: 'Enter full screen mode'}
     {key: 'Esc'    , desc: 'Zoom to the overview screen'}
     {key: 'Return' , desc: 'Select slide from overview screen'}
     {key: 'Space'  , desc: 'Next slide or select slide from overview screen'}
@@ -16,6 +16,7 @@ class window.HelpModal
     {key: 'end'    , desc: 'Jump to last slide'}
     {key: '?'      , desc: 'Toggles the help modal'}
   ]
+
 
   constructor: (@reveal) ->
     @help = null
