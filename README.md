@@ -1,11 +1,10 @@
 # Showboat
 
 ## WIP
-- add some fluff classes (around fragments too)
-- normalize styles and configuration
 - test notes
-- update reveal
+- normalize styles and configuration
 - print styles
+- update reveal
 - generators
 - document
 - charts?

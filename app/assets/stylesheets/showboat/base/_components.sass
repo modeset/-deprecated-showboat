@@ -24,3 +24,21 @@
   &.in
     opacity: 1
 
+.decal
+  border-radius: 0.4em
+  font-size: 85%
+  font-family: $sans-bold-family
+  text-transform: uppercase
+  padding: 0.125em 0.5em
+
+// Generate color lists and decal modifiers
+@if $status-list
+  @each $_status in $status-list
+    $_class_name: nth($_status,1)
+    $_color_value: nth($_status,2)
+    .#{$_class_name}
+      color: $_color_value
+    .decal.#{$_class_name}
+      color: white
+      background-color: $_color_value
+
