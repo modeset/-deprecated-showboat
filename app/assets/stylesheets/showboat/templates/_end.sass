@@ -1,5 +1,5 @@
 .reveal .slides > .end-template
-  padding-top: 18%
+  padding-top: 15%
 
 .end-template h1
   +box-sizing(border-box)
@@ -31,6 +31,20 @@
     padding-top: 18%
 
 @media (max-width: 1024px)
+  .reveal .slides > .end-template
+    padding-top: 25%
   .end-template .slant
     display: none
+
+@media (max-width: 768px)
+  .reveal .slides > .end-template
+    padding-top: 35%
+  .end-template .logo
+    width: 65px
+    height: 48px
+
+
+@media (max-width: 320px)
+  .reveal .slides > .end-template
+    padding-top: 50%
 

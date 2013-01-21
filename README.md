@@ -13,11 +13,4 @@
 Fine tune around specific media queries
 
 - [ ] 2560
-- [ ] 1920
-- [x] 1440
-- [ ] 1024
-- [ ] 768
-- [ ] 720
-- [ ] 480
-- [ ] 320
 

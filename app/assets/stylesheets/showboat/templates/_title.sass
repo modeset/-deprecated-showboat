@@ -1,5 +1,5 @@
 .reveal .slides > .title-template
-  padding-top: 15%
+  padding-top: 10%
 
 .title-template h1
   +font-percent(24)
@@ -53,6 +53,8 @@
     right: 8%
 
 @media (max-width: 1024px)
+  .reveal .slides > .title-template
+    padding-top: 20%
   .title-template h2
     width: 100%
   .title-template .logo
@@ -61,4 +63,22 @@
     margin-top: 1em
   .title-template .slant
     display: none
+
+@media (max-width: 768px)
+  .reveal .slides > .title-template
+    padding-top: 30%
+
+@media (max-width: 480px)
+  .reveal .slides > .title-template
+    padding-top: 20%
+  .title-template .smoke
+    display: none
+  .title-template .logo
+    float: left
+    width: 65px
+    height: 48px
+
+@media (max-width: 320px)
+  .reveal .slides > .title-template
+    padding-top: 30%
 
