@@ -2,6 +2,7 @@ class window.HelpModal
 
   shortcuts: [
     {key: 'F'      , desc: 'Enter full screen mode'}
+    {key: 'S'      , desc: 'Open the notes window'}
     {key: 'Esc'    , desc: 'Zoom to the overview screen'}
     {key: 'Return' , desc: 'Select slide from overview screen'}
     {key: 'Space'  , desc: 'Next slide or select slide from overview screen'}
