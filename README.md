@@ -1,7 +1,6 @@
 # Showboat
 
 ## WIP
-- print styles
 - better initialization around js
 - generators
 - test it out in a project
