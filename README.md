@@ -11,7 +11,3 @@
 - retina assets
 - charts?
 
-Fine tune around specific media queries
-
-- [ ] 2560
-
