@@ -8,7 +8,7 @@ Reveal.initialize
   center: false
   rollingLinks: false
   loop: true
-  transition: "default" # default/cube/page/concave/zoom/linear/fade/none
+  transition: "default" # default/concave/zoom/linear/fade/none
 
   # Optional libraries used to extend on reveal.js
   dependencies: [

@@ -1,10 +1,9 @@
 # Showboat
 
 ## WIP
-- update reveal
-- fix all transitions up
 - hook up notes
 - print styles
+- better initialization around js
 - generators
 - setup gem
 - document
