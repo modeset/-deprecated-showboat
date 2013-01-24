@@ -1,7 +1,6 @@
 # Showboat
 
 ## WIP
-- better initialization around js
 - generators
 - test it out in a project
 - setup and cleanup for gem
