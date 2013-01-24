@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+curl -L -o ./vendor/assets/javascripts/reveal.js https://raw.github.com/hakimel/reveal.js/master/js/reveal.js
+curl -L -o ./vendor/assets/javascripts/classList.js https://raw.github.com/hakimel/reveal.js/master/lib/js/classList.js
+curl -L -o ./vendor/assets/javascripts/head.min.js https://raw.github.com/hakimel/reveal.js/master/lib/js/head.min.js
+curl -L -o ./vendor/assets/javascripts/html5shiv.js https://raw.github.com/hakimel/reveal.js/master/lib/js/html5shiv.js
+curl -L -o ./vendor/assets/javascripts/highlight.js https://raw.github.com/hakimel/reveal.js/master/plugin/highlight/highlight.js
+curl -L -o ./vendor/assets/javascripts/notes.js https://raw.github.com/hakimel/reveal.js/master/plugin/notes/notes.js
+curl -L -o ./vendor/assets/javascripts/zoom.js https://raw.github.com/hakimel/reveal.js/master/plugin/zoom-js/zoom.js
+
