@@ -1,11 +1,12 @@
 # Showboat
 
 ## WIP
-- test notes
-- normalize styles and configuration
-- print styles
 - update reveal
+- fix all transitions up
+- hook up notes
+- print styles
 - generators
+- setup gem
 - document
 - charts?
 
