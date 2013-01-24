@@ -1,11 +1,13 @@
 $legacy-support-for-ie: true !default
 
 @import bourbon
+
 @import base/mixins
-@import theme/shared
+@import base/config
 @import base/normalize
 @import base/scaffold
 @import base/typography
+@import base/highlight
 @import base/table
 @import base/components
 
@@ -27,9 +29,11 @@ $legacy-support-for-ie: true !default
 @import reveal/transitions/zoom
 @import reveal/transitions/linear
 @import reveal/transitions/page
+@import reveal/transitions/fade
 @import reveal/transitions/none
 
 @import templates/background
+@import templates/slide_header
 @import templates/title
 @import templates/copy
 @import templates/list
@@ -37,5 +41,6 @@ $legacy-support-for-ie: true !default
 @import templates/end
 @import templates/columns
 @import templates/help_modal
-@import theme/github
+
+// @import print/print
 

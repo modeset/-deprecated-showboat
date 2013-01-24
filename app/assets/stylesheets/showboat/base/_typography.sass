@@ -1,7 +1,3 @@
-$heading-color: $body-color !default
-$heading-family: $sans-family !default
-$heading-font-weight: bold !default
-$heading-line-height: $base-line-height !default
 $h1-size: $base-font-size + 40 !default
 $h2-size: $base-font-size + 32 !default
 $h3-size: $base-font-size + 24 !default
@@ -9,24 +5,14 @@ $h4-size: $base-font-size + 18 !default
 $h5-size: $base-font-size + 14 !default
 $h6-size: $base-font-size + 10 !default
 
-$hr-border: $base-border !default
-$mark-bgc: $yellow !default
-$mark-color: #333 !default
-
-$code-bgc: $focus-bgc !default
-$code-border: $base-border !default
-$code-color-inline: $body-color !default
-$pre-radii: $radii !default
-
-$blockquote-family: $serif-family !default
 
 // Heading elements
 // -----------------------------------------------------------------------------
 h1, h2, h3, h4, h5, h6
-  color: $heading-color
-  font-family: $heading-family
-  font-weight: $heading-font-weight
-  line-height: $heading-line-height
+  color: #5b5b5b
+  font-family: $sans-lite-family
+  font-weight: normal
+  line-height: $base-line-height
   text-transform: lowercase
   margin: 0
 
@@ -48,39 +34,15 @@ h5
 h6
   +font-percent($h6-size)
 
-.slide-heading
-  +font-percent(26)
-  background: transparent image-url('showboat/modeset-crest-white.png') no-repeat 0 0
-  font-family: $serif-family
-  text-transform: uppercase
-  padding-top: 0.4em
-  padding-left: 65px
-  min-width: 50px
-  min-height: 50px
-
-.slide-heading span
-  +font-percent(16)
-  font-family: $sans-bold-family
+%mtn-header
+  color: $primary
   &:before
-    content: "_"
-
-.slide-heading a
-  +font-percent(18)
-  margin-top: 0.7em
-  float: right
-
-.slide-heading a,
-.slide-heading a:visited
-  color: $heading-color
-
-.slide-heading a:hover,
-.slide-heading a:active
-  color: $blue
-
-@media (max-width: 480px)
-  .slide-heading
-    background-image: none
-    padding-left: 0
+    background: transparent image-url('showboat/mountains.png') no-repeat 0 0
+    content: ""
+    display: block
+    margin-bottom: 0.25em
+    width: 20px
+    height: 5px
 
 // Inline paragraph elements
 // -----------------------------------------------------------------------------
@@ -120,8 +82,8 @@ dfn[title]
   cursor: help
 
 mark
-  background: $mark-bgc
-  color: $mark-color
+  background: #ffc40d
+  color: #333
   padding: 0 0.3em
 
 
@@ -131,7 +93,7 @@ hr
   display: block
   height: 1px
   border: 0
-  border-top: 1px solid $hr-border
+  border-top: 1px solid $base-border
   margin: 1em 0
   padding: 0
 hr.dotted
@@ -143,8 +105,8 @@ hr.dashed
 // Code inline and block elements
 // -----------------------------------------------------------------------------
 pre, code, kbd, samp
-  background-color: $code-bgc
-  border: 1px solid $code-border
+  background-color: #fdfdfd
+  border: 1px solid #cfd0cf
   font-family: $mono-family
   font-size: 85%
 
@@ -152,10 +114,10 @@ code, kbd, samp
   padding: 0.1em 0.3em
 
 code
-  color: $code-color-inline
+  color: #0091ce
 
 pre
-  border-radius: $pre-radii
+  border-radius: $radii
   margin: 0.5em 0
   padding: 0.8em
   white-space: pre
@@ -174,7 +136,7 @@ pre code
 // Blockquotes
 // -----------------------------------------------------------------------------
 blockquote
-  font-family: $blockquote-family
+  font-family: $serif-family
   margin: 1em 0
   padding-right: 10%
   text-transform: none

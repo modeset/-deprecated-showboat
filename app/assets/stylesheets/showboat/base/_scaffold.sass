@@ -1,4 +1,3 @@
-$body-family: $sans-family !default
 $body-background: $base-bgc !default
 $body-color: $base-color !default
 $select-color: white !default
@@ -19,7 +18,7 @@ html, body
 
 html, button, input, select, textarea
   color: $body-color
-  font-family: $body-family
+  font-family: $sans-family
 
 body
   +font-size($base-font-size)
@@ -52,7 +51,7 @@ body
 
 // Links
 a
-  +transition(color, $speed)
+  +transition(color 0.25s ease)
 
 a, a:visited
   color: $link-color

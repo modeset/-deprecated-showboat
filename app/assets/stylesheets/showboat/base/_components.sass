@@ -1,28 +1,5 @@
-%mtn-header
-  color: $primary
-  &:before
-    background: transparent image-url('showboat/mountains.png') no-repeat 0 0
-    content: ""
-    display: block
-    margin-bottom: 0.25em
-    width: 20px
-    height: 5px
-
 .reflect
   -webkit-box-reflect: below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.75, transparent), to(rgba(0,0,0,0.2)))
-
-.slide-header
-  +box-sizing(border-box)
-  +transition(opacity $speed ease)
-  position: absolute
-  top: 0.5em
-  left: 0
-  padding: 0 5%
-  width: 100%
-  z-index: 100
-  opacity: 0
-  &.in
-    opacity: 1
 
 .decal
   border-radius: 0.4em
