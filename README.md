@@ -1,7 +1,6 @@
 # Showboat
 
 ## WIP
-- replace images with more generic fpo ones
 - add generators
 - add a favicon and other icons for generators
 - test it out in a project
