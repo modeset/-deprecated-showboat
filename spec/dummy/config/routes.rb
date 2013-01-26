@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  mount Showboat::Engine => "/showboat"
-  root :to => 'pages#index'
+  root :to => 'showboat#index'
 end
 
