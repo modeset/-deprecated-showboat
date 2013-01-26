@@ -7,11 +7,11 @@ require "showboat/version"
 Gem::Specification.new do |s|
   s.name        = "showboat"
   s.version     = Showboat::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Showboat."
-  s.description = "TODO: Description of Showboat."
+  s.authors     = ["Mode Set"]
+  s.email       = ["info@modeset.com"]
+  s.homepage    = "https://github.com/modeset/showboat"
+  s.summary     = "Presentation master slides for Mode Set, built on top of Reveal.js."
+  s.description = "Presentation master slides for Mode Set, built on top of Reveal.js."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
@@ -23,5 +23,8 @@ Gem::Specification.new do |s|
   s.add_dependency "coffee-rails"
   s.add_dependency "underscore-rails"
   s.add_dependency "redcarpet"
+
+  # Used by the dummy application
   s.add_development_dependency "sqlite3"
 end
+
