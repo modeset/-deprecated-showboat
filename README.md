@@ -1,8 +1,8 @@
 # Showboat
 
 ## WIP
-- add generators
-- add a favicon and other icons for generators
+- add rake tasks for generator files
+- generator for a given slide?
 - test it out in a project
 - setup and cleanup for gem
 - document
