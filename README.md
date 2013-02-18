@@ -14,7 +14,7 @@ Edit the `Gemfile` (it only needs 2 gems)
 
 ```
 gem 'rails'
-gem 'showboat'
+gem 'showboat', github: 'modeset/showboat'
 ```
 
 
