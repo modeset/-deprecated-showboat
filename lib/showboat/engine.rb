@@ -1,5 +1,6 @@
 require 'sass-rails'
 require 'bourbon'
+require "modicon"
 require 'coffee-rails'
 require 'underscore-rails'
 require "haml-rails"

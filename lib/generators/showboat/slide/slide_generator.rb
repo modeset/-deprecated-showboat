@@ -18,8 +18,8 @@ module Showboat
   %h2 Continued or presenter
   %date 01.29.2013
   = image_tag "showboat/title-smoke.png", alt: "mode set", class: "smoke"
-  = image_tag "showboat/slant.png", alt: "/", class: "slant"
-  = image_tag "showboat/modeset-logo.png", alt: "mode set", class: "logo"
+  .slant
+  %div.modeset-logo
 
   %aside.notes
     talk fast
@@ -64,8 +64,8 @@ module Showboat
           haml = <<-HAML
 %section.end-template
   %h1 thank you
-  = image_tag "showboat/slant.png", alt: "/", class: "slant"
-  = image_tag "showboat/modeset-logo.png", alt: "mode set", class: "logo"
+  .slant
+  %div.modeset-logo
 
           HAML
         end

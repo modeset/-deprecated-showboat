@@ -13,13 +13,15 @@
 
 .slide-heading
   +font-percent(26)
-  background: transparent image-url('showboat/modeset-crest-white.png') no-repeat 0 0
   font-family: $serif-family
   text-transform: uppercase
-  padding-top: 0.4em
-  padding-left: 65px
-  min-width: 50px
-  min-height: 50px
+  &:before
+    @extend %modicon
+    content: "\e000"
+    color: white
+    color: rgba(white, 0.5)
+    font-size: 1.5em
+    margin-right: 0.25em
 
 .slide-heading span
   +font-percent(16)
@@ -39,9 +41,4 @@
 .slide-heading a:hover,
 .slide-heading a:active
   color: $blue
-
-@media (max-width: 480px)
-  .slide-heading
-    background-image: none
-    padding-left: 0
 

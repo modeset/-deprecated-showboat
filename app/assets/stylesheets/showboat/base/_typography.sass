@@ -37,12 +37,8 @@ h6
 %mtn-header
   color: $primary
   &:before
-    background: transparent image-url('showboat/mountains.png') no-repeat 0 0
-    content: ""
-    display: block
-    margin-bottom: 0.25em
-    width: 20px
-    height: 5px
+    @extend .modeset-heading:before
+    font-size: 35%
 
 // Inline paragraph elements
 // -----------------------------------------------------------------------------
@@ -177,10 +173,13 @@ ol, ul, dl, menu, dd
   padding: 0
 
 ul, ol
+  @extend .modeset-list
   font-family: $sans-bold-family
-  list-style-image: image-url('showboat/list.png')
   text-transform: uppercase
   margin: 1em 0 1em 1em
+  li:before
+    @extend .modicon-plus:before
+    color: #aaa
 
 ul ul, ul ol,
 ol ul, ol ol
@@ -188,6 +187,8 @@ ol ul, ol ol
   margin-top: 0
   margin-bottom: 0.5em
   text-transform: none
+  li:before
+    color: lighten(#aaa, 5%)
 
 nav ul,
 nav ol,
@@ -195,6 +196,8 @@ nav ol,
   margin: 0
   list-style: none
   list-style-image: none
+  li:before
+    display: none
 
 // Definition Lists
 dt

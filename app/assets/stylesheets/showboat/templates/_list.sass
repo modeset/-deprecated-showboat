@@ -10,14 +10,23 @@
   +font-percent($h1-size)
   font-family: $sans-lite-family
   text-transform: lowercase
-  list-style-image: image-url('showboat/mountains.png')
   margin-top: 0.32em
+
+.list-template li:before
+  @extend %modicon
+  @extend .modicon-mountains:before
+  font-size: 0.4em
+
 
 .list-template ul ul,
 .list-template ul ol,
 .list-template ol ul,
 .list-template ol ol
   font-size: 50%
+  li:before
+    @extend .modicon-plus:before
+    color: #aaa
+    font-size: 0.5em
 
 .list-template h1 + ul,
 .list-template h1 + ol

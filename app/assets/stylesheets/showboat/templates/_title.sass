@@ -28,27 +28,22 @@
   z-index: -1
 
 .title-template .slant
-  position: absolute
-  top: 35%
-  right: 15%
-  z-index: -1
+  top: 75%
+  right: 10%
 
-.title-template .logo
-  +box-sizing(border-box)
+.title-template .modeset-logo
+  font-size: 60%
   position: absolute
-  bottom: 7%
-  right: 5%
-  width: 130px
-  height: 95px
+  bottom: 0
+  right: 6%
   z-index: -1
-
 
 @media (max-width: 1440px)
   .reveal .slides > .title-template
     padding-top: 15%
   .title-template h2
     width: 70%
-  .title-template .logo
+  .title-template .modeset-logo
     right: 3%
   .title-template .slant
     right: 8%
@@ -58,7 +53,7 @@
     padding-top: 20%
   .title-template h2
     width: 100%
-  .title-template .logo
+  .title-template .modeset-logo
     position: static
     float: right
     margin-top: 1em
@@ -74,10 +69,8 @@
     padding-top: 20%
   .title-template .smoke
     display: none
-  .title-template .logo
+  .title-template .modeset-logo
     float: left
-    width: 65px
-    height: 48px
 
 @media (max-width: 320px)
   .reveal .slides > .title-template

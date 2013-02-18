@@ -4,8 +4,9 @@
   %h2 Continued or presenter
   %date 01.29.2013
   = image_tag "showboat/title-smoke.png", alt: "mode set", class: "smoke"
-  = image_tag "showboat/slant.png", alt: "/", class: "slant"
-  = image_tag "showboat/modeset-logo.png", alt: "mode set", class: "logo"
+  .slant
+  %div.modeset-logo
+
 
   %aside.notes
     talk fast
@@ -51,7 +52,7 @@
 
 %section.copy-template(data-heading="Copy Template <span>list example</span>")
   :markdown
-    # A list in the copy template
+    # Typography elements and a list
     Yeah, well, _listen_. You <kbd>ought</kbd> to **ditch** the <strong><em>two</em></strong>
     <a href="http://modeset.com/">geeks</a> you're in the <dfn title="motorized vehicle">car</dfn> with now and get
     <sub>in with</sub> us. But <samp>that's</samp> <code>alright</code>, <mark>we'll worry about</mark> that <time>later</time>.
@@ -193,6 +194,6 @@
 -# So long, thanks much
 %section.end-template
   %h1 thank you
-  = image_tag "showboat/slant.png", alt: "/", class: "slant"
-  = image_tag "showboat/modeset-logo.png", alt: "mode set", class: "logo"
+  .slant
+  %div.modeset-logo
 

@@ -110,9 +110,6 @@ Copyright 2013 [Mode Set](https://github.com/modeset)
 
 ## Todo
 - web socket control
-- make public and release the gem
-- retina assets
-- add optional per slide transition type
 - charts
 
 
