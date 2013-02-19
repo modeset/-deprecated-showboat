@@ -16,6 +16,7 @@ class window.ResponsiveFrame
 
   resize: (e) ->
     percent = @sample_media.offsetWidth / @sample_parent.offsetWidth
+    return if _.isNaN percent
     for frame in @frames
       ratio = frame.getAttribute 'data-ratio'
       wv = Math.round(frame.parentNode.offsetWidth * percent)
