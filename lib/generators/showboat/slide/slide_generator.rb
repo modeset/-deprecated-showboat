@@ -16,7 +16,7 @@ module Showboat
   %h1 Mode Set
   %h2 Presentation Name
   %h2 Continued or presenter
-  %date 01.29.2013
+  %date= Time.zone.now.strftime "%m.%d.%Y"
   = image_tag "showboat/title-smoke.png", alt: "mode set", class: "smoke"
   .slant
   %div.modeset-logo
