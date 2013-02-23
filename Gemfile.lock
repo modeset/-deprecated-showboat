@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    showboat (0.0.2)
+    showboat (0.0.3)
       bourbon
       coffee-rails
       haml-rails (~> 0.3.2)
