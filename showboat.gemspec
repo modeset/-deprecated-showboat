@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Presentation master slides for Mode Set, built on top of Reveal.js."
   s.description = "Presentation master slides for Mode Set, built on top of Reveal.js."
 
-  s.files = Dir["{app,config,db,lib,vender}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails"
